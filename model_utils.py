@@ -43,6 +43,7 @@ class NDRMUtils:
                            'without', 'won', 'wonder', 'would', 'would', 'wouldn', 'x', 'y', 'yes', 'yet', 'you', 'youve', 'your', 'youre', 'yours', 'yourself', 'yourselves', 'z', 'zero']
 
     def parser_add_args(self, parser):
+        parser.add_argument('--model', default='ndrm3', help='model architecture (default: ndrm3)')
         parser.add_argument('--max_terms_query', default=20, help='maximum number of terms to consider for query (default: 20)', type=int)
         parser.add_argument('--max_terms_doc', default=4000, help='maximum number of terms to consider for long text (default: 4000)', type=int)
         parser.add_argument('--max_terms_orcas', default=2000, help='maximum number of terms to consider for long text (default: 2000)', type=int)

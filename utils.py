@@ -7,6 +7,7 @@ import argparse
 import datetime
 from factory import Factory
 from data_utils import DataUtils
+from model_utils import NDRMUtils
 from learner_utils import LearnerUtils
 
 
@@ -39,11 +40,9 @@ class Utils:
     def setup_and_verify(self):
         parser = argparse.ArgumentParser(description= 'trec 2019 deep learning track (document re-ranking task)')
         torch.set_printoptions(threshold=500)
-        self.__parser_add_args(parser)
-        self.args, _ = parser.parse_known_args()
         self.data_utils = DataUtils(self.printer)
+        self.model_utils = NDRMUtils(self.printer)
         self.learner_utils = LearnerUtils(self.printer)
-        self.model_utils = Factory.get_model_utils(self)
         self.sub_utils = [self.data_utils, self.model_utils, self.learner_utils]
         for sub_utils in self.sub_utils:
             sub_utils.parent = self
@@ -101,9 +100,6 @@ class Utils:
         ncg /= len(qrels)
         ndcg /= len(qrels)
         return mrr, ncg, ndcg
-
-    def __parser_add_args(self, parser):
-        parser.add_argument('--model', default='ndrm3', help='model architecture (default: ndrm3)')
 
     def __print_args(self):
         self.printer.print('Running with following specified and inferred arguments:')

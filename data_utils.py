@@ -33,7 +33,7 @@ class DataUtils:
         parser.add_argument('--file_in_cnd_dev', default='msmarco-docdev-top100', help='filename for top 100 dev candidates (default: msmarco-docdev-top100)')
         parser.add_argument('--file_in_cnd_val', default='msmarco-doctest2019-top100', help='filename for top 100 validation candidates (default: msmarco-doctest2019-top100)')
         parser.add_argument('--file_in_cnd_test', default='msmarco-doctest2020-top100', help='filename for top 100 test candidates (default: msmarco-doctest2020-top100)')
-        #parser.add_argument('--file_in_cnd_orcas', default='orcas-doctrain-top100', help='filename for orcas candidates (default: orcas-doctrain-top100)')
+        parser.add_argument('--file_in_cnd_orcas', default='orcas-doctrain-top100', help='filename for orcas candidates (default: orcas-doctrain-top100)')
         parser.add_argument('--file_in_qrel_train', default='msmarco-doctrain-qrels.tsv', help='filename for train qrels (default: msmarco-doctrain-qrels.tsv)')
         parser.add_argument('--file_in_qrel_dev', default='msmarco-docdev-qrels.tsv', help='filename for dev qrels (default: msmarco-docdev-qrels.tsv)')
         parser.add_argument('--file_in_qrel_val', default='2019qrels-docs.txt', help='filename for validation qrels (default: 2019qrels-docs.txt)')

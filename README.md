@@ -8,8 +8,8 @@ If you are unfamiliar with the TREC-DL benchmark, then you may want to first go 
 * TREC-DL 2020: [website](https://microsoft.github.io/TREC-2020-Deep-Learning/) (Currently open for submissions!)
 
 ### DISCLAIMER
-While I and some of the other contributors to this repository are also serving as organizers for TREC-DL, please note that this is **NOT** in any way officially associated with the TREC track.
-Instead, this is a personal codebase that I have been using for my own experimentation and am releasing it publicly with the hope that it may be useful for others who are just starting out on this benchmark.
+While some of the contributors to this repository also serve as organizers for TREC-DL, please note that this code is **NOT** officially associated in any way with the TREC track.
+Instead, this is a personal codebase that we have been using for our own experimentation and we are releasing it publicly with the hope that it may be useful for others who are just starting out on this benchmark.
 
 As with any research code, you may find some kinks or bugs.
 Please report any and all bugs and issues you discover, and I will try to get to them as soon as possible.

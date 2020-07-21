@@ -21,6 +21,9 @@ Also, please be aware that I may frequently push new changes and updates to the 
 ## The Conformer-Kernel Model with Query Term Independence (QTI)
 
 The baseline model implements the Conformer-Kernel architecture with QTI, as described in this [paper]().
+
+![The Conformer-Kernel architecture with QTI](images/CK.png)
+
 If you use this code for your research, please cite the paper as follows:
 
 ```
@@ -32,7 +35,6 @@ year={2020}
 }
 ```
 
-![The Conformer-Kernel architecture with QTI][images/CK.png]
 
 ## Requirements
 

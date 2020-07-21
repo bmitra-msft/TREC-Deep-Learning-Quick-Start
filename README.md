@@ -43,6 +43,14 @@ Specifically, the code provides a choice between three existing models:
 
 ## Requirements
 
+The code in this repository has been tested with:
+* **Python version**: 3.5.5
+* **PyTorch version**: 1.3.1
+* **CUDA version**: 10.0.130
+
+The training and evaluatin were performed using 4 Tesla P100 GPUs with 16280 MiB.
+Depending on your GPU availability, you may need to set the minibatch size accordingly for train (```--mb_size_train```), test (```--mb_size_test```), and inference (```--mb_size_infer```).
+
 ## Getting Started
 
 Please clone the repo and run ```python run.py```.

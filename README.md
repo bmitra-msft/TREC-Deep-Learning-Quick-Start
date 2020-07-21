@@ -12,10 +12,10 @@ While some of the contributors to this repository also serve as organizers for T
 Instead, this is a personal codebase that we have been using for our own experimentation and we are releasing it publicly with the hope that it may be useful for others who are just starting out on this benchmark.
 
 As with any research code, you may find some kinks or bugs.
-Please report any and all bugs and issues you discover, and I will try to get to them as soon as possible.
-If you have any questions or feedback, please reach out to me via [email](mailto:bmitra@microsoft.com) or [Twitter](https://twitter.com/UnderdogGeek).
+Please report any and all bugs and issues you discover, and we will try to get to them as soon as possible.
+If you have any questions or feedback, please reach out to us via [email](mailto:bmitra@microsoft.com) or [Twitter](https://twitter.com/UnderdogGeek).
 
-Also, please be aware that I may sometimes push new changes and model updates based on personal on-going research and experimentation.
+Also, please be aware that we may sometimes push new changes and model updates based on personal on-going research and experimentation.
 
 
 ## The Conformer-Kernel Model with Query Term Independence (QTI)

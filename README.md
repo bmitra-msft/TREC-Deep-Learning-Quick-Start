@@ -48,8 +48,20 @@ The code in this repository has been tested with:
 * **PyTorch version**: 1.3.1
 * **CUDA version**: 10.0.130
 
-The training and evaluatin were performed using 4 Tesla P100 GPUs with 16280 MiB.
+The training and evaluatin were performed using **4 Tesla P100 GPUs** with 16280 MiB memory each.
 Depending on your GPU availability, you may need to set the minibatch size accordingly for train (```--mb_size_train```), test (```--mb_size_test```), and inference (```--mb_size_infer```).
+
+In addition, the code assumes the following Python packages are installed:
+* numpy
+* fasttext
+* krovetzstemmer
+* clint
+
+Using PIP, you can install all of them by running the following from command-line:
+
+```
+pip install numpy fasttext krovetzstemmer clint
+```
 
 ## Getting Started
 

@@ -8,7 +8,7 @@ If you are unfamiliar with the TREC-DL benchmark, then you may want to first go 
 * TREC-DL 2020: [website](https://microsoft.github.io/TREC-2020-Deep-Learning/) (Currently open for submissions!)
 
 ### DISCLAIMER
-While I and some of the other contributors to this repository are also serving as organizers for TREC-DL, please note that this is *NOT* in any way officially associated with the TREC track.
+While I and some of the other contributors to this repository are also serving as organizers for TREC-DL, please note that this is **NOT** in any way officially associated with the TREC track.
 Instead, this is a personal codebase that I have been using for my own experimentation and am releasing it publicly with the hope that it may be useful for others who are just starting out on this benchmark.
 
 As with any research code, you may find some kinks or bugs.
@@ -24,7 +24,7 @@ The base model implements the Conformer-Kernel architecture with QTI, as describ
 
 ![The Conformer-Kernel architecture with QTI](images/CK.png)
 
-If you use this code for your research, please cite the paper as follows:
+If you use this code for your research, please cite the [paper]() as follows:
 
 ```
 @article{mitra2020conformer,
@@ -36,9 +36,9 @@ If you use this code for your research, please cite the paper as follows:
 ```
 
 Specifically, the code provides a choice between three existing models:
-* NDRM1: A Conformer-Kernel architecture with QTI for latent representation learning and matching
-* NDRM2: A simple learned BM25-like ranking function with QTI for explicit term matching
-* NDRM3 (default): A linear combination of NDRM1 and NDRM2
+* **NDRM1**: A Conformer-Kernel architecture with QTI for latent representation learning and matching
+* **NDRM2**: A simple learned BM25-like ranking function with QTI for explicit term matching
+* **NDRM3** (default): A linear combination of **NDRM1** and **NDRM2**
 
 
 ## Requirements

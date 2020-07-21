@@ -1,26 +1,26 @@
 # TREC Deep Learning Quick Start
 
-This is a quick start guide for the document ranking task in the TREC Deep Learning (TREC-DL) track benchmark.
-If you are new to TREC-DL, then this repository may make it more convenient for you to download all the required datasets and then train and evaluate an efficient deep neural baseline on this benchmark, under both the rerank and the fullrank settings.
+This is a quick start guide for the document ranking task in the TREC Deep Learning (TREC-DL) benchmark.
+If you are new to TREC-DL, then this repository may make it more convenient for you to download all the required datasets and then train and evaluate a relatively efficient deep neural baseline on this benchmark, under both the rerank and the fullrank settings.
 
 If you are unfamiliar with the TREC-DL benchmark, then you may want to first go through the websites and overview paper corresponding to previous and current editions of the track.
 * TREC-DL 2019: [website](https://microsoft.github.io/TREC-2019-Deep-Learning) and [overview paper](https://arxiv.org/pdf/2003.07820.pdf)
 * TREC-DL 2020: [website](https://microsoft.github.io/TREC-2020-Deep-Learning/) (Currently open for submissions!)
 
 ### DISCLAIMER
-While I and some of the other contributors to this repository are also serving as organizers for TREC-DL, please note that this is *NOT* in any way an official pipeline for the track.
-Instead, this is a personal codebase that I have been using for my own experimentation and am releasing it publicly with the hope that it may be useful for others who are just starting out with this benchmark.
+While I and some of the other contributors to this repository are also serving as organizers for TREC-DL, please note that this is *NOT* in any way officially associated with the TREC track.
+Instead, this is a personal codebase that I have been using for my own experimentation and am releasing it publicly with the hope that it may be useful for others who are just starting out on this benchmark.
 
 As with any research code, you may find some kinks or bugs.
 Please report any and all bugs and issues you discover, and I will try to get to them as soon as possible.
 If you have any questions or feedback, please reach out to me via [email](mailto:bmitra@microsoft.com) or [Twitter](https://twitter.com/UnderdogGeek).
 
-Also, please be aware that I may frequently push new changes and updates to the model based on personal research and experimentation.
+Also, please be aware that I may sometimes push new changes and model updates based on personal on-going research and experimentation.
 
 
 ## The Conformer-Kernel Model with Query Term Independence (QTI)
 
-The baseline model implements the Conformer-Kernel architecture with QTI, as described in this [paper]().
+The base model implements the Conformer-Kernel architecture with QTI, as described in this [paper]().
 
 ![The Conformer-Kernel architecture with QTI](images/CK.png)
 
@@ -28,12 +28,17 @@ If you use this code for your research, please cite the paper as follows:
 
 ```
 @article{mitra2020conformer,
-title={Conformer-Kernel with Query Term Independence for Document Retrieval},
-author={Mitra, Bhaskar and Hofstatter, Sebastian and Zamani, Hamed and Craswell, Nick},
-journal={arXiv preprint arXiv:},
-year={2020}
+    title={Conformer-Kernel with Query Term Independence for Document Retrieval},
+    author={Mitra, Bhaskar and Hofstatter, Sebastian and Zamani, Hamed and Craswell, Nick},
+    journal={arXiv preprint arXiv:},
+    year={2020}
 }
 ```
+
+Specifically, the code provides a choice between three existing models:
+* NDRM1: A Conformer-Kernel architecture with QTI for latent representation learning and matching
+* NDRM2: A simple learned BM25-like ranking function with QTI for explicit term matching
+* NDRM3 (default): A linear combination of NDRM1 and NDRM2
 
 
 ## Requirements

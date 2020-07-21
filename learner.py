@@ -187,7 +187,7 @@ class Learner:
                 for i in range(len(docs)):
                     did = docs[i][0]
                     score = docs[i][1]
-                    f.write('{}\tQ0\t{}\t{}\t{}\t{}\n'.format(qid, did, i+1, score, self.utils.args.model))
+                    f.write('{} Q0 {} {} {} {}\n'.format(qid, did, i+1, score, self.utils.args.model))
 
     def __save_model(self, marker):
         torch.save({'model_state_dict': self.model.state_dict(), 'optimizer_state_dict': self.optimizer.state_dict()}, os.path.join(self.utils.args.local_dir, self.utils.args.file_out_model.format(marker)))

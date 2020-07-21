@@ -40,6 +40,9 @@ Specifically, the code provides a choice between three existing models:
 * **NDRM2**: A simple learned BM25-like ranking function with QTI for explicit term matching
 * **NDRM3** (default): A linear combination of **NDRM1** and **NDRM2**
 
+You can also plug-in your own neural model by simply replacing the ```model.py``` and ```model_utils.py``` with appropriate implementations corresponding to your model.
+The full retrieval evaluation assumes query term independence.
+If that assumption does not hold for your new model, please comment out the calls to ```evaluate_full_retrieval``` in ```learner.py```.
 
 ## Requirements
 
@@ -66,10 +69,22 @@ pip install numpy fasttext krovetzstemmer clint
 ## Getting Started
 
 Please clone the repo and run ```python run.py```.
-The script should download all necessary data files, if missing, which can take significant amount of time depending on network speed.
-So, please be patient and if the download fails for any particular file then please delete the local incomplete copy of the file and re-run the script.
-After the download completes, the script should train a simple neural document ranking model (NDRM) and report metrics on the TREC 2019 test set for the document reranking task.
 
+The script should automatically download all necessary data files, if missing, which can take significant amount of time depending on network speed.
+If the download fails for any particular file then please delete the local incomplete copy and re-run the script.
+The script performs pretty aggressive text normalization that may not always be appropriate.
+Please be aware of this and modify the code if you desire a different behaviour.
+
+After the download completes, the script should first pretrain a word2vec model for the input embeddings.
+Then subsequently, it should train a simple neural document ranking model (NDRM) and report metrics on the TREC-DL 2019 test set for both the reranking and the fullranking tasks.
+The script should also prepare the run files corresponding to the TREC-DL 2020 test set for submission.
+
+Couple of additional notes:
+* The code automatically downloads the whole ORCAS dataset.
+I plan to make this optional in the future but have not got to implementing it yet.
+So, please feel free to disable that in the code directly for now to avoid downloading them unnecessarily if you don't plan to use them.
+* The IDF file is generated conservatively only for terms that appear in the train, dev, validation, and test queries.
+So, if you change or add to the query files, then please delete the generated IDF file and rerun the script.
 
 ## Legal Notices
 

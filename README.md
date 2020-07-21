@@ -81,7 +81,7 @@ The script should also prepare the run files corresponding to the TREC-DL 2020 t
 
 Couple of additional notes:
 * The code automatically downloads the whole ORCAS dataset.
-I plan to make this optional in the future but have not got to implementing it yet.
+We plan to make this optional in the future but have not got to implementing it yet.
 So, please feel free to disable that in the code directly for now to avoid downloading them unnecessarily if you don't plan to use them.
 * The IDF file is generated conservatively only for terms that appear in the train, dev, validation, and test queries.
 So, if you change or add to the query files, then please delete the generated IDF file and rerun the script to regenerate it.

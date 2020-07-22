@@ -44,6 +44,8 @@ You can also plug-in your own neural model by simply replacing the ```model.py``
 The full retrieval evaluation assumes query term independence.
 If that assumption does not hold for your new model, please comment out the calls to ```evaluate_full_retrieval``` in ```learner.py```.
 
+You can also enable the use of the [ORCAS dataset](https://microsoft.github.io/TREC-2020-Deep-Learning/ORCAS) as training data or as an additional document field by using the ```--orcas_train``` and ```--orcas_field``` arguments, respectively.
+
 ## Requirements
 
 The code in this repository has been tested with:

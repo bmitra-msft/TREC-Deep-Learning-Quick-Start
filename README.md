@@ -29,7 +29,7 @@ If you use this code for your research, please cite the [paper](https://arxiv.or
 ```
 @article{mitra2020conformer,
     title={Conformer-Kernel with Query Term Independence for Document Retrieval},
-    author={Mitra, Bhaskar and Hofstatter, Sebastian and Zamani, Hamed and Craswell, Nick},
+    author={Mitra, Bhaskar and Hofst\"{a}tter, Sebastian and Zamani, Hamed and Craswell, Nick},
     journal={arXiv preprint arXiv:},
     year={2020}
 }

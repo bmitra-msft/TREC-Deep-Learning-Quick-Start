@@ -20,11 +20,11 @@ Also, please be aware that we may sometimes push new changes and model updates b
 
 ## The Conformer-Kernel Model with Query Term Independence (QTI)
 
-The base model implements the Conformer-Kernel architecture with QTI, as described in this [paper]().
+The base model implements the Conformer-Kernel architecture with QTI, as described in this [paper](https://arxiv.org/pdf/2007.10434.pdf).
 
 ![The Conformer-Kernel architecture with QTI](images/CK.png)
 
-If you use this code for your research, please cite the [paper]() as follows:
+If you use this code for your research, please cite the [paper](https://arxiv.org/pdf/2007.10434.pdf) as follows:
 
 ```
 @article{mitra2020conformer,

@@ -4,8 +4,9 @@ This is a quick start guide for the document ranking task in the TREC Deep Learn
 If you are new to TREC-DL, then this repository may make it more convenient for you to download all the required datasets and then train and evaluate a relatively efficient deep neural baseline on this benchmark, under both the rerank and the fullrank settings.
 
 If you are unfamiliar with the TREC-DL benchmark, then you may want to first go through the websites and overview paper corresponding to previous and current editions of the track.
-* TREC-DL 2019: [website](https://microsoft.github.io/TREC-2019-Deep-Learning) and [overview paper](https://arxiv.org/pdf/2003.07820.pdf)
-* TREC-DL 2020: [website](https://microsoft.github.io/TREC-2020-Deep-Learning/) (Currently open for submissions!)
+* TREC-DL 2019: [website](https://microsoft.github.io/msmarco/TREC-Deep-Learning-2019) and [overview paper](https://arxiv.org/pdf/2003.07820.pdf)
+* TREC-DL 2020: [website](https://microsoft.github.io/msmarco/TREC-Deep-Learning-2020) and [overview paper](https://arxiv.org/pdf/2102.07662.pdf)
+* TREC-DL (current): [website](https://microsoft.github.io/msmarco/TREC-Deep-Learning)
 
 ### DISCLAIMER
 While some of the contributors to this repository also serve as organizers for TREC-DL, please note that this code is **NOT** officially associated in any way with the TREC track.
